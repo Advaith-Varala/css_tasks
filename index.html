@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Color Table</title>
-    <link rel="stylesheet" href="./colors.css">
-</head>
+    <title>CSS BOX MODEL</title>
+    <style>
+        .bm{
+           margin: 20px;
+           width: 50%;
+            
+        }
+        
+        .margin,.border , .padding,.content{
+            padding: 10px;
+            border: 1px solid black;
+            margin:30px;        
+            
+        }
+        /* zbadfdfdf */
 
+    </style>
+</head>
 <body>
-    <div style="background-color: beige;">
-        <h1 style="text-align: center;color: maroon;">
-            HEXA DECIMAL COLOR CODE TABLE
-        </h1>
+    <h1>CSS BOX MODEL</h1>
+    <div class="bm">
+        <div class="margin" style="background-color: blanchedalmond;">
+            <!-- <h4 style="margin-left: 30px;">margin</h4> -->
+            <div class="border" style="background-color: aquamarine;">
+                <!-- <h4 style="margin-left:90px;">border</h4> -->
+                <div class="padding" style="background-color: green;">
+                    <!-- <h4 style="margin-left: 120px;">padding</h4> -->
+                    <div class="content" style="background-color: goldenrod;">
+                    <h4 style="text-align: center;">content</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <table>
-        <tr class="row_1">
-            <td id="c1">Alice Blue<br>#F0F8FF</td>
-            <td id="c2">Antique white<br>#FAEBD7</td>
-            <td id="c3">Aqua<br>#00FFFF</td>
-        </tr>
-        <tr class="row_2">
-            <td id="c4">Aquamarine<br>#7FFFD4</td>
-            <td id="c5">Azure<br>#F0FFFF</td>
-            <td id="c6">Beige<br>#F5F5DC</td>
-        </tr>
-        <tr class="row_3">
-            <td id="c7">Bisque<br>#FFE4C4</td>
-            <td id="c8">Blue<br>#0000FF</td>
-            <td id="c9">Blue violet<br>#8A2BE2</td>
-        </tr>
-        <tr class="row_4">
-            <td id="c10">Brown<br>#A52A2A</td>
-            <td id="c11">Blury Wood<br>#DEB887</td>
-            <td id="c12">Cadet Blue<br>#5F9EA0</td>
-        </tr>
-    </table>
 </body>
 </html>
